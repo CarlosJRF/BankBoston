@@ -10,36 +10,37 @@ package com.mycompany.model;
  */
 public class Cliente {
     
-    private int Rut;
+    private String Rut;
     private String Nombre;
     private String ApellidoPaterno;
     private String ApellidoMaterno;
     private String Comuna;
-    private String DomicilioCalle;
-    private int NumeroCalle;
-    private int Telefono;
+    private String Domicilio;
+    private String Telefono;
+    private CuentaCorriente cuentaCorriente;
+    
 
     
-    public Cliente (){
-        
-    }
     
-    public Cliente(int Rut, String Nombre, String ApellidoPaterno, String ApellidoMaterno, String Comuna, String DomicilioCalle, int NumeroCalle, int Telefono) {
+    
+    public Cliente(String Rut, String Nombre, String ApellidoPaterno, String ApellidoMaterno, String Comuna, String Domicilio, String Telefono, CuentaCorriente cuentaCorriente) {
         this.Rut = Rut;
         this.Nombre = Nombre;
         this.ApellidoPaterno = ApellidoPaterno;
         this.ApellidoMaterno = ApellidoMaterno;
         this.Comuna = Comuna;
-        this.DomicilioCalle = DomicilioCalle;
-        this.NumeroCalle = NumeroCalle;
+        this.Domicilio = Domicilio;
         this.Telefono = Telefono;
+        this.cuentaCorriente = cuentaCorriente;
+        
+        
     }
 
-    public int getRut() {
+    public String getRut() {
         return Rut;
     }
 
-    public void setRut(int Rut) {
+    public void setRut(String Rut) {
         this.Rut = Rut;
     }
 
@@ -75,29 +76,33 @@ public class Cliente {
         this.Comuna = Comuna;
     }
 
-    public String getDomicilioCalle() {
-        return DomicilioCalle;
+    public String getDomicilio() {
+        return Domicilio;
     }
 
-    public void setDomicilioCalle(String DomicilioCalle) {
-        this.DomicilioCalle = DomicilioCalle;
+    public void setDomicilio(String Domicilio) {
+        this.Domicilio = Domicilio;
     }
 
-    public int getNumeroCalle() {
-        return NumeroCalle;
-    }
 
-    public void setNumeroCalle(int NumeroCalle) {
-        this.NumeroCalle = NumeroCalle;
-    }
-
-    public int getTelefono() {
+    public String getTelefono() {
         return Telefono;
     }
 
-    public void setTelefono(int Telefono) {
+    public void setTelefono(String Telefono) {
         this.Telefono = Telefono;
     }
+
+    public CuentaCorriente getCuentaCorriente() {
+        return cuentaCorriente;
+    }
+
+    
+    
+    
+    
+    
+    
     
     
     
